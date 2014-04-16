@@ -1,8 +1,7 @@
-====== 北京邮电大学本科学位论文模板 ======
-
-作者：Caspar Zhang <casparant@gmail.com>
-修改: Bing Hsu <hello@antinucleon.com>
-修改: Guohua Wu <ghmeta@163.com>
+#北京邮电大学本科学位论文模板
+* 作者：Caspar Zhang <casparant@gmail.com>
+* 修改: Bing Hsu <hello@antinucleon.com>
+* 修改: Guohua Wu <ghmeta@163.com>
 
 #主要修改
 * 使用[ctex](http://www.ctan.org/pkg/ctex "ctex")处理中文
@@ -10,6 +9,7 @@
 
 #系统需求
 Linux + Xelatex
+
 理论上支持Windows，但是没有测试
 
 #如何使用
