@@ -6,6 +6,7 @@
 #主要修改
 * 使用[ctex](http://www.ctan.org/pkg/ctex "ctex")处理中文
 * 封面的学校名字和学校Logo采集自[buptthesis](http://code.google.com/p/buptthesis/ "buptthesis")
+* 修复pdf中无法复制文字的bug
 
 #系统需求
 Linux + Xelatex
