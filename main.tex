@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                  %
+%   Copyright (c) 2010 - 2011 Caspar Zhang <casparant@gmail.com>   %
+%                                                                  %
+%   This copyrighted material is made available to anyone wishing  %
+%   to use, modify, copy, or redistribute it subject to the terms  %
+%   and conditions of the GNU General Public License version 2.    %
+%                                                                  %
+%   This program is distributed in the hope that it will be        %
+%   useful, but WITHOUT ANY WARRANTY; without even the implied     %
+%   warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR        %
+%   PURPOSE. See the GNU General Public License for more details.  %
+%                                                                  %
+%   You should have received a copy of the GNU General Public      %
+%   License along with this program; if not, write to the Free     %
+%   Software Foundation, Inc., 51 Franklin Street, Fifth Floor,    %
+%   Boston, MA 02110-1301, USA.                                    %
+%                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,oneside,12pt]{book}
+\usepackage{inc/BUPTthesisbachelor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin Documents %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\input{main.cfg}    % Main items 
+\include{cover}     % Cover
+\include{statement} % 诚信声明
+\include{abstract}  % Abstract
+\frontmatter\tableofcontents % Content
+
+% 正文
+\newpage\mainmatter
+\fancypagestyle{plain}{\pagestyle{fancy}} % Add head to new chapter
+\pagestyle{fancy} % Head and foot
+%\let\cleardoublepagebak=\cleardoublepage
+%\let\cleardoublepage\relax % Make new chapter stay on old page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Main Area %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{引言}
+\section{使用\XeLaTeX{}+xeCJK写毕业论文}
+这个模板是一个\XeLaTeX{}模板，\cite{bib:book01}使用\XeLaTeX{}
+引擎编译，其中中文支持使用xeCJK\footnote{xeCJK是由孙文昌老师开
+发的支持CJK文字排版的\XeLaTeX{}宏包，该宏包分高低两个版本，高
+版本需要0.9995版本以上的\XeLaTeX{}，texlive2008以上符合该版本
+要求，而texlive2009已经自带了xeCJK宏包。}。本模板暂时只在Linux
+平台上测试通过，欢迎大家在不同平台不同\TeX{}环境下编译测试。
+
+\subsection{模板概述}
+在Twitter上，@yegle同学推荐了他的同学cnMuggle(我姑且称之为梵高)
+写的一个北京邮电大学本科生\LaTeX{}模板，网址在: 
+http://code.google.com/p/buptthesis-bachelor/ 。但是由于梵高同
+学使用的是CTeX，这是一个暂时只能在Windows上运行的工具库，作为一
+个Linux用户，我只能重新发明轮子。我选择\XeLaTeX{}引擎+xecjk宏包
+是因为我比较熟悉这个配置下如何使用中文。同时毕业论文对字体有要
+求，而使用\XeLaTeX{}支持的Truetype字体比在\LaTeX{}下生成字体要
+来得方便。
+
+\subsection{鸣谢}
+在我的模板开发过程中，主要是自己写代码，出了问题去网上搜解决方案，
+\cite{bib:book02,bib:article01,bib:article02}请允许我首先不谢国
+家，而谢Google和CTeX论坛，同时还要感谢前人的成果，我多多少少使用
+了一些前辈的代码，他们是：
+
+\begin{itemize}
+    \item cnMuggle: http://code.google.com/p/buptthesis-bachelor/
+    \item DazzleZhang: http://code.google.com/p/buptthesis/
+    \item gnawux: http://code.google.com/p/latex-bupt/
+    \item Ruini Xue: http://sourceforge.net/projects/thuthesis/
+\end{itemize}
+
+\chapter{模板功能性测试}
+\section{滕王阁序}
+首先使用我最喜欢的古文《滕王阁序\footnote{《滕王阁序》全称
+《秋日登洪府滕王阁饯别序》。亦名《滕王阁诗序》，骈文名篇。唐
+王勃作。}》用作测试模板。
+
+\subsection{《滕王阁序》前三段节选}
+豫章故郡，洪都新府。星分翼轸(zhěn)，地接衡庐。襟三江而带五湖，
+控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃
+之榻。雄州雾列，俊采星驰，台隍(huáng)枕夷夏之交，宾主尽东南之
+美。都督阎公之雅望，棨(qǐ )戟(jǐ)遥临；宇文新州之懿(yì)范，
+襜(chān )帷(wéi)暂驻。十旬休假，胜友如云；千里逢迎，高朋满
+座。腾蛟起凤，孟学士之词宗；紫电青霜，王将军之武库。家君作
+宰，路出名区；童子何知，躬逢胜饯。
+
+时维九月，序属三秋。潦（lǎo）水尽而寒潭清，烟光凝而暮山紫。
+俨(yán)骖騑(cān fēi)于上路，访风景于崇阿。临帝子之长洲，得
+天人之旧馆。层峦耸翠，上出重霄；飞阁流丹，下临无地。鹤汀凫
+(fú )渚，穷岛屿之萦(yíng)回；桂殿兰宫，即冈峦之体势。
+
+披绣闼（tà），俯雕甍(méng )。山原旷其盈视，川泽纡(yū)其骇
+瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳（zhú)。
+云销雨霁(jì)，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。
+渔舟唱晚，响穷彭蠡(lǐ)之滨；雁阵惊寒，声断衡阳之浦。
+
+\subsection{滕王阁风景}
+滕王阁，高耸于南昌城西，赣江之滨。实景如图\ref{fig:twg01}:
+\buptfigure{inc/twg}{滕王阁实景}{fig:twg01}
+步入阁中，仿佛置身于一座以滕王阁为主题的艺术殿堂。在第一层
+正厅有一幅表现王勃创作《滕王阁序》的大型汉白玉浮雕《时来风
+送滕王阁》，巧妙地将滕王阁的动人传说与历史事实融为一体。第
+二层正厅是23.90×2.55米的大型工笔重彩壁画《人杰图》，绘有自
+秦至明的80位各领风骚的江西历代名人。这与第四层表现江西山川
+精华的《地灵图》，堪称双璧，令人叹为观止。第五层是凭栏骋目
+的最佳处。进入厅堂，迎面是苏东坡手书的千古名篇《滕王阁
+序》。每一层都有一个主题，亦都与阁有关。
+
+\section{系统调用}
+
+不要怪我话题转换得太快，这里要测试一下表格和其他功能，所以
+就回归老本行啦。关于系统调用，有如下定义：
+
+\begin{definition}
+    In computing, a system call is how a program requests 
+    a service from an operating system's kernel that it 
+    does not normally have permission to run.
+\end{definition}
+
+\subsection{系统调用的分类}
+
+通常，我们把系统调用分为8类，他们分别分类如下(见表\ref{tab:syscall01}):
+
+\begin{bupttable}{系统调用的分类}{tab:syscall01}
+    \begin{tabular}{c|c|c|c}
+        \hline
+        \multicolumn{2}{c|}{分类} & 数量 & 举例 \\ \hline
+        \multicolumn{2}{c|}{进程控制} & 约40个 & fork \\ \hline
+        \multirow{2}{*}{文件系统控制} & 文件读写操作 & TBD & open, close \\ \cline{2-4}
+        & 文件系统操作 & TBD & chmod \\ \hline
+        \multicolumn{2}{c|}{系统控制} & TBD & ioctl \\ \hline
+        \multicolumn{2}{c|}{内存管理} & TBD & mmap \\ \hline
+        \multicolumn{2}{c|}{网络管理} & TBD & gethostid \\ \hline
+        \multicolumn{2}{c|}{Socket控制} & TBD & bind \\ \hline
+        \multicolumn{2}{c|}{用户管理} & TBD & getuid \\ \hline
+        \multirow{5}{*}{进程间通信} & 信号 & TBD & sigaction \\ \cline{2-4}
+        & 消息 & TBD & msgctl \\ \cline{2-4}
+        & 管道 & TBD & pipe \\ \cline{2-4}
+        & 信号量 & TBD & semctl \\ \cline{2-4}
+        & 共享内存 & TBD & shmctl \\ \hline
+    \end{tabular}
+\end{bupttable}
+
+\section{来点数学的\cite{bib:inproceeding01}}
+
+这里要测试的是公式。
+
+\subsection{随机分布}
+
+\begin{definition}
+    圆对称复高斯随机向量：\cite{bib:inproceeding02}如果一个复高
+    斯随机向量$\bm{X}\in C^{n}$对应的实随机向量$\bm{X}$的协方差矩
+    阵具有如下形式:
+    \begin{equation}
+        E[(\hat{\bm{X}}-E[\hat{\boldsymbol{X}}])
+        (\hat{\bm{X}}-E[\hat{\boldsymbol{X}}])^{H}]
+        =\cfrac{1}{2}
+        \begin{array}({cc})
+            Re(\bm{Q}) & -Im(\boldsymbol{Q}) \\
+            Im(\bm{Q}) & Re(\boldsymbol{Q}) \\
+        \end{array}
+    \end{equation}
+\end{definition}
+
+
+%%%%%%%%%%%%%%%%%%%%%%% Main Area ENDs Here %%%%%%%%%%%%%%%%%%%%%%%%
+%\let\cleardoublepage=\cleardoublepagebak
+% Reference
+\clearpage\phantomsection\addcontentsline{toc}{chapter}{参考文献}
+\bibliographystyle{buptbachelor}
+\refbodyfont{\bibliography{ref}}
+
+% Thanks to page
+\clearpage\phantomsection\addcontentsline{toc}{chapter}{致\qquad{}谢}
+\chapter*{致\qquad{}谢}
+\normalsize\thankwords
+
+% Appendix
+\clearpage\phantomsection\addcontentsline{toc}{chapter}{附\qquad{}录}
+\chapter*{附\qquad{}录}
+\include{appendix}
+
+\end{document}

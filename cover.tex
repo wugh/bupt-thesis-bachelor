@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                  %
+%   Modified by Bing Hsu <hello@antinucleon.com> 2013              %
+%   Forked From (c) 2010 - 2011 Caspar Zhang <casparant@gmail.com> %
+%                                                                  %
+%   This copyrighted material is made available to anyone wishing  %
+%   to use, modify, copy, or redistribute it subject to the terms  %
+%   and conditions of the GNU General Public License version 2.    %
+%                                                                  %
+%   This program is distributed in the hope that it will be        %
+%   useful, but WITHOUT ANY WARRANTY; without even the implied     %
+%   warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR        %
+%   PURPOSE. See the GNU General Public License for more details.  %
+%                                                                  %
+%   You should have received a copy of the GNU General Public      %
+%   License along with this program; if not, write to the Free     %
+%   Software Foundation, Inc., 51 Franklin Street, Fifth Floor,    %
+%   Boston, MA 02110-1301, USA.                                    %
+%                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+    \centering    
+    \begin{spacing}{1.05}
+            % 下面的vspace支撑在Word版封面中不存在，但是由于Word版封面
+            % 用了网格对齐导致排版混乱，所以加上若干vspace支撑以保持和
+            % Word版封面的排版一致。无奈啊~~
+            \quad{}\vspace{8mm}
+            \yihao \quad{} \\
+            \includegraphics[width=12cm]{inc/buptname}\\
+            \yihao \quad{} \\
+            \covernamefont{本~~科~~毕~~业~~设~~计~~(论文)} \\ % thesis name
+            \yihao \quad{} \\
+	    \includegraphics[width=3.5cm]{inc/buptseal}\\
+            \wuhao \quad{} \\
+            \parbox[c]{.7\textwidth}{%
+                \thesistitlefont{题目:~~\CJKunderline*{\thesistitle}}} \\%
+            \sanhao \quad{}
+            \vspace{5mm}
+        \end{spacing}
+        \begin{spacing}{1.6}
+            \coveritemsfont{姓\qquad{}名~~\ul[5cm]{\name}} \\
+            \coveritemsfont{学\qquad{}院~~\ul[5cm]{\institute}} \\
+            \coveritemsfont{专\qquad{}业~~\ul[5cm]{\major}} \\
+            \coveritemsfont{班\qquad{}级~~\ul[5cm]{\class}} \\
+            \coveritemsfont{学\qquad{}号~~\ul[5cm]{\stuno}} \\
+            \coveritemsfont{班内序号~~\ul[5cm]{\classno}} \\
+            \coveritemsfont{指导教师~~\ul[5cm]{\supervisor}}
+        \end{spacing}
+        \begin{spacing}{1.05}
+            \sanhao\quad{} \\ \wuhao\quad{} \\
+            \vspace{5mm}
+            \coverdatefont{\date}
+        \end{spacing}
+\end{titlepage}
