@@ -33,3 +33,6 @@ appendix.tex: 论文的附录部分
 只是编译论文内容: make main
 
 Windows下批量编译脚本: complie.bat
+
+#TODO
+* 把sty文件该写成cls文件
